@@ -1,0 +1,18 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Watch video</h1>
+
+<div class="row">
+    <div class="col-md-9 col-lg-9">
+        <video width="640" height="360" controls>
+            <source src="@Url.Action("GetVideo", "Videos")" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
